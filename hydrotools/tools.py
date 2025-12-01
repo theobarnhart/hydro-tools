@@ -89,8 +89,8 @@ def get_smdowy(dt): # fold this into hydrotools!
 	dowy : int
 		Day of SnowModel Water Year, the number of days since the first day of the current SnowModel water year.
 	'''
-    smwy = get_smWY(dt)
-    return len(pd.date_range(f'{smwy-1}-09-01',dt))
+	smwy = get_smWY(dt)
+	return len(pd.date_range(f'{smwy-1}-09-01',dt))
 
 def get_mowy(dt):
 	'''Coverts Pandas DateTimeIndex Timestamp to month of water year.
